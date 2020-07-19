@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Question 8-arrow function</p>
+
+<p id="demo"></p>
+
+<script>
+let ask = (question,yes,no) => (confirm(question)? yes:no);
+
+let result = ask("Do you agree", "You agreed", "You cancelled the execution");
+
+document.getElementById("demo").innerHTML = result;
+console.log(result);
+</script>
+
+</body>
+</html>
