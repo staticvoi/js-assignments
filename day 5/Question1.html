@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Question 1- map filter positive odd numbers</h2>
+
+<p id="demo"></p>
+
+<script>
+let arr =[];
+
+let n = Number(prompt("Enter the n value: ",1));
+
+for(let i=1;i<=n;i++){
+	let num = Number(prompt("Enter positve number : ",0));
+    arr.push(num);
+}
+
+let oddcube = arr.filter(el=>el%2!=0).map(el=>el*el*el);
+console.log(oddcube);
+
+document.getElementById("demo").innerHTML = oddcube;
+</script>
+
+</body>
+</html>
