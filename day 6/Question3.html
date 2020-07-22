@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<h3>Question3- input user name and clock with Toggle Dark/Light Mode</h3>
+
+<p id="demo"></p>
+
+<h4 id="time"></h4>
+ 
+<button onclick="myFunction()">Toggle dark mode</button>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+
+var person = prompt("Please enter your name", "name");
+
+if (person != null) {
+  document.getElementById("demo").innerHTML =
+  "Hello " + person + "! Welcome to toggle mode!!";
+}
+
+
+const ctime = document.getElementById('time');
+
+
+function clock(){
+    let date = new Date();
+    let time = date.toLocaleTimeString();
+    ctime.innerText = time;
+}
+
+clock();
+
+setInterval(clock,1000);
+
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>day 6</title>
+<script>
+let i = 0;
+function change() {
+  var doc = document.getElementById("background");
+  var color = ["black", "blue", "brown", "green"];
+  doc.style.backgroundColor = color[i];
+  i = (i + 1) % color.length;
+}
+setInterval(change, 5000);
+</script>
+</head>
+<body>
+    <h1>Question 1- change background color</h1>
+    <div id="background">&nbsp</div>
+</body>
+</html>
